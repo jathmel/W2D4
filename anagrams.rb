@@ -18,7 +18,7 @@ def second_anagram?(str1, str2)
         str2_arr.delete(ch)
       end
     end
-    return true if str1_arr.empty? and str2_arr.empty?
+    return true if str1_arr.empty? && str2_arr.empty?
   end
   false
 end
