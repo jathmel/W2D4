@@ -44,3 +44,16 @@ def jumble_sort(str)
   end
   arr.join
 end
+
+def forth_anagram?(str1, str2)
+  str1_hash = Hash.new(0)
+  str2_hash = Hash.new(0)
+  str1.chars.each do |ch|
+    str1_hash[ch] += 1
+  end
+  str2.chars.each do |ch|
+    str2_hash[ch] += 1
+  end
+  str1_hash == str2_hash
+
+end
